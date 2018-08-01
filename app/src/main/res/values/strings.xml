@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BottomNavigation_Deom</string>
+	
+	<string-array name="dollarside">
+		<item>HKD</item>
+		<item>USD</item>
+		<item>AUD</item>
+		<item>RMB</item>
+		<item>KRW</item>
+		<item>TWD</item>
+		<item>EUR</item>
+		<item>GBP</item>
+		<item>VND</item>
+		
+	</string-array>
+	
+	
+</resources>

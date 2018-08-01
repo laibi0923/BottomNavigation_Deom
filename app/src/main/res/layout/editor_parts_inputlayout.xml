@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content"
+	android:layout_width="match_parent"
+	android:orientation="vertical">
+	
+	<android.support.design.widget.TextInputLayout
+		android:id="@+id/editor_textinputlayout"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:clickable="true"
+		android:paddingTop="25dp"
+		android:paddingBottom="25dp"
+		android:paddingLeft="20dp"
+		android:paddingRight="20dp"
+		android:textColor="@color/colorPrimary"
+		android:textColorHint="@color/colorPrimary"
+		android:background="?attr/selectableItemBackground">
+
+		<leaningcode.leo.com.bottomnavigation_deom.Editor.PaddingTopEditText
+			android:id="@+id/editor_layout_text"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:focusable="false"
+			android:editable="false"
+			android:enabled="false"
+			android:longClickable="false"
+			android:clickable="false"
+			android:cursorVisible="false"
+			android:background="@android:color/transparent"
+			android:textColor="@color/colorPrimary"
+			android:textColorHint="@color/colorPrimary" />
+
+	</android.support.design.widget.TextInputLayout>
+	
+	
+	<View
+		android:id="@+id/editor_underline"
+		android:layout_height="0.5dp"
+		android:layout_width="match_parent"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:background="@color/colorUnderLine" />
+	
+</LinearLayout>

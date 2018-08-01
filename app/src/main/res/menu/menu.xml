@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item1"
+		android:enabled="true"
+		android:title="檢視"
+        android:icon="@mipmap/ic_format_float_left"
+		app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/item2"
+		android:enabled="true"
+		android:title="記帳"
+        android:icon="@mipmap/ic_tooltip_edit"
+		app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/item3"
+		android:enabled="true"
+		android:title="設定"
+        android:icon="@mipmap/ic_cog"
+		app:showAsAction="ifRoom" />
+</menu>

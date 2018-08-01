@@ -1,0 +1,106 @@
+Index: app/src/main/java/leaningcode/leo/com/bottomnavigation_deom/Fragement_Editor.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/leaningcode/leo/com/bottomnavigation_deom/Fragement_Editor.java	(revision 53e337fcde37887a2368e9f0c275f27444b8977b)
++++ app/src/main/java/leaningcode/leo/com/bottomnavigation_deom/Fragement_Editor.java	(date 1532798106060)
+@@ -3,6 +3,7 @@
+ import android.app.AlertDialog;
+ import android.content.*;
+ import android.os.*;
++import android.support.annotation.Nullable;
+ import android.support.design.widget.*;
+ import android.support.v4.app.*;
+ import android.util.*;
+@@ -19,7 +20,13 @@
+ 	public String FRAGMENT_TAG, DIALOG_TITLE, DIALOG_HINT, TEMP_TEXT;
+ 	public static int DIALOG_REQUEST_CODE;
+ 
+-	// Get Value form Dialog Fragment
++    @Override
++    public void onCreate(@Nullable Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        
++    }
++
++    // Get Value form Dialog Fragment
+ 	@Override
+ 	public void onActivityResult(int requestCode, int resultCode, Intent data)
+ 	{
+Index: app/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build.gradle	(revision 53e337fcde37887a2368e9f0c275f27444b8977b)
++++ app/build.gradle	(date 1532797623379)
+@@ -19,15 +19,17 @@
+ }
+ 
+ dependencies {
+-	
++
+     compile fileTree(include: ['*.jar'], dir: 'libs')
+     compile 'com.android.support.constraint:constraint-layout:1.1.2'
+-    testCompile 'junit:junit:4.12'
+-    testCompile 'com.android.support.test:runner:1.0.2'
+-    testCompile 'com.android.support.test.espresso:espresso-core:3.0.2'
+-	compile 'com.android.support:recyclerview-v7:26.+'
++//    testImplementation 'junit:junit:4.12'
++//    tsetimplementation 'com.android.support.test:runner:1.0.2'
++//    tsetimplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
++    compile 'com.android.support:recyclerview-v7:26.+'
+     compile 'com.android.support:design:26.+'
+     compile 'com.android.support:appcompat-v7:26.+'
+-	
+ 
++    compile 'com.google.firebase:firebase-database:11.8.0'
+ }
++
++apply plugin: 'com.google.gms.google-services'
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(revision 53e337fcde37887a2368e9f0c275f27444b8977b)
++++ .idea/misc.xml	(date 1532796224269)
+@@ -25,7 +25,7 @@
+       </value>
+     </option>
+   </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/build/classes" />
+   </component>
+   <component name="ProjectType">
+Index: build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- build.gradle	(revision 53e337fcde37887a2368e9f0c275f27444b8977b)
++++ build.gradle	(date 1532796505250)
+@@ -12,6 +12,7 @@
+ 
+         // NOTE: Do not place your application dependencies here; they belong
+         // in the individual module build.gradle files
++        classpath 'com.google.gms:google-services:3.1.1'
+     }
+ }
+ 
+diff --git .idea/caches/build_file_checksums.ser .idea/caches/build_file_checksums.ser
+index ac440d810c725b0ed1521d6ef32e76d7723811c1..9a6781b2d9ce49d7b3bc6bb76818beec6f6909cd
+GIT binary patch
+literal 543
+zc${1FmVvdnh`~NNKUXg?FQq6yGexf?KR>5fFEb@IQ7^qHF(oHeub?PDD>b=9F91S2
+zm1gFoxMk*~I%lLNXBU^|7Q2L-Ts|(GuF1r}<i#MFTj`TnT;dMa8(f)}9Fm!vT3nKt
+zTj0aMpIeEdv4nx&Co8cmQNOe#Ge_SyvB0{bfPsNA<>Ae5|A6ii1j*@v<n%lei!*@o
+ztn9ZA9u`Zu$jrdx#=w=6pP1s7m|T)y<jKHUl2MdeoROcCQc+;<zyJa~<s3j#0EpR2
+z7z7dv3SyE#PKSD{w1|Nz+G)*a@gHm)ArF`s7(iAt2ng#vWe{6Xm=Gs;bMNCDJ7<<K
+z=s8=(gche3700+|<QJFtq~^!Fgv3Bii9v)>L26M+W@>S1AwwMl8_1|DvOPEZ88)%J
+zY~Y;n=7&=q(6_~@B_)}8>BTTNz}3#XnXu31K6{>Sf}T{k)8U0B3_K`~g)8(evRKve
+zR+T$I>Sgc}u0KFS1#<F}6LYY-V9Bf4yD49;F5TnubxK?KHK1n%@woSMFY~HB2}}Jp
+N*`^skJ1dY>0RX)F!C?RZ
+

@@ -1,0 +1,41 @@
+{
+  "project_info": {
+    "project_number": "44955066241",
+    "firebase_url": "https://linear-analyst-136914.firebaseio.com",
+    "project_id": "linear-analyst-136914"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44955066241:android:7db203d36d303dff",
+        "android_client_info": {
+          "package_name": "leaningcode.leo.com.bottomnavigation_deom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "44955066241-u1ue4cofc31u264vjj25vpm5roubr1bg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4XvWAtK04TryAd8sBW8_Xw7yHssbvLq0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

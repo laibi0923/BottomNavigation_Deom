@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/colorNormalBackground"
+	android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorNormalText"
+            android:text="Medium Text"
+            android:layout_centerInParent="true"
+			android:longClickable="false"
+            android:id="@+id/TextInput_Title"/>
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/ic_arrow_left"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/AmountInput_BackBtn"/>
+
+    </RelativeLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_weight="1"
+		android:paddingLeft="20dp"
+		android:paddingRight="20dp" >
+		
+		<android.support.design.widget.TextInputLayout
+			android:id="@+id/amount_inputlayout"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:clickable="true"
+			android:paddingTop="50dp"
+			android:textColor="@color/colorPrimary"
+			android:textColorHint="@color/colorPrimary"
+			android:background="@color/colorNormalBackground"
+			app:errorEnabled="true" >
+
+			<EditText
+				android:id="@+id/Amount_Text"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:singleLine="true"
+				android:textAlignment="center"
+				android:text="$ 0.00"
+				android:textSize="40dp"
+				android:paddingBottom="20dp"
+				android:background="@android:color/transparent"
+				android:inputType="numberDecimal"/>
+
+		</android.support.design.widget.TextInputLayout>
+		
+	</LinearLayout>
+	
+	
+	
+	
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#484848">
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1.0"
+            android:padding="15dp"
+            android:gravity="center"
+            android:id="@+id/AmountInput_SaveBtn"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorNormalText"
+                android:text="保存"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

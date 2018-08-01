@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:orientation="vertical" >
+	
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/bottomnavigationToolbar1"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:background="@color/colorPrimary">
+
+		<TextView
+			android:textColor="@color/colorNormalText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="SAVE"
+			android:layout_gravity="center"/>
+
+	</android.support.v7.widget.Toolbar>
+
+
+	<android.support.v4.widget.SwipeRefreshLayout
+		android:id="@+id/swipe_container"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" >
+
+		<android.support.v4.widget.NestedScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<!-- part 1 -->
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:background="@color/colorNormalBackground"
+					android:layout_marginTop="20dp"
+					android:orientation="vertical"
+					android:gravity="center">
+
+					<!-- create date-->
+					<LinearLayout
+						android:id="@+id/editor_createdate"
+						android:clickable="true"
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:paddingTop="25dp"
+						android:gravity="center">
+
+						<TextView
+							android:id="@+id/editor_createdate_text"
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:singleLine="true"
+							android:text="帳單日期 : 23/7/2018" />
+
+					</LinearLayout>
+
+
+					<!-- amount -->
+					<LinearLayout
+						android:id="@+id/editor_amount"
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:orientation="vertical"
+						android:paddingTop="25dp"
+						android:paddingBottom="25dp"
+						android:clickable="true"
+						android:background="?attr/selectableItemBackground" >
+
+
+						<TextView
+							android:id="@+id/editor_amount_text"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:text="$ 0.00"
+							android:focusable="true"
+							android:singleLine="true"
+							android:background="@android:color/transparent"
+							android:layout_gravity="center"
+							android:gravity="center_horizontal"
+							android:textSize="40dp"/>
+
+						<TextView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:text="金額"
+							android:layout_gravity="center"
+							android:gravity="center_horizontal"
+							android:textSize="20dp"/>
+
+					</LinearLayout>
+
+
+					<!-- dollar side -->
+					<LinearLayout
+						android:id="@+id/editor_dollarside"
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:paddingBottom="25dp"
+						android:clickable="true"
+						android:gravity="center">
+
+						<TextView
+							android:id="@+id/editor_doallarside_text"
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:textAlignment="center"
+							android:text="HKD" />
+
+					</LinearLayout>
+
+
+				</LinearLayout>
+
+
+				<!-- part 2 -->
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="horizontal"
+					android:layout_marginTop="10dp">
+
+					<!-- input type -->
+					<include
+						android:id="@+id/input_type"
+						layout="@layout/editor_parts_type" />
+
+
+				</LinearLayout>
+
+
+
+				<!-- part 3 -->
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:background="@color/colorNormalBackground"
+					android:orientation="vertical"
+					android:layout_marginTop="10dp">
+
+					<!-- name -->
+					<include
+						android:id="@+id/include_name"
+						layout="@layout/editor_parts_inputlayout" />
+
+					<!-- account -->
+					<include
+						android:id="@+id/include_account"
+						layout="@layout/editor_parts_inputlayout" />
+
+					<!-- paid times -->
+					<include
+						android:id="@+id/include_paymethod"
+						layout="@layout/editor_parts_inputlayout" />
+
+					<!-- start & end date & Alram-->
+					<include
+						android:id="@+id/include_paymethod"
+						layout="@layout/editor_parts_date" />
+					
+				</LinearLayout>
+
+
+				<!-- part 4 -->
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:background="@color/colorNormalBackground"
+					android:orientation="vertical"
+					android:layout_marginTop="20dp" >
+
+					<!-- remarks -->
+					<include
+						android:id="@+id/include_remark"
+						layout="@layout/editor_parts_inputlayout" />
+
+				</LinearLayout>
+
+
+
+
+				<!-- part 5 -->
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:background="@color/colorNormalBackground"
+					android:orientation="vertical"
+					android:layout_marginTop="20dp"
+					android:layout_marginBottom="20dp">
+
+					<!-- photo -->
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:paddingTop="25dp"
+						android:paddingBottom="25dp"
+						android:paddingLeft="20dp"
+						android:paddingRight="20dp"
+						android:clickable="true"
+						android:background="?attr/selectableItemBackground" >
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceSmall"
+							android:text="加入相片" />
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+
+
+
+
+
+
+
+			</LinearLayout>
+		</android.support.v4.widget.NestedScrollView>
+
+
+
+	</android.support.v4.widget.SwipeRefreshLayout>
+			 
+	
+</LinearLayout>
+	
+	
+
+
+
+
