@@ -93,7 +93,7 @@ public class Dialog_For_RecycleView extends DialogFragment
 		mLayout.setOrientation(LinearLayoutManager.VERTICAL);
 		mRecyclerView.setLayoutManager(mLayout);
 		// 設置下劃線 android 5.0
-//		mRecyclerView.addItemDecoration(new DividerItemDecoration(this.getActivity(), DividerItemDecoration.VERTICAL));
+		mRecyclerView.addItemDecoration(new DividerItemDecoration(this.getActivity(), DividerItemDecoration.VERTICAL));
 		mRecyclerView.setAdapter(mAdapter);
 		
 	}

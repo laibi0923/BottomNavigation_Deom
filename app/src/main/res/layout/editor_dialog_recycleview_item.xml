@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView
+<LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_margin="10dp"
 	android:layout_height="wrap_content"
-	android:layout_width="match_parent"
-	app:cardBackgroundColor="#FFFFFF"
-	app:cardCornerRadius="10dp"
-	app:contentPadding="15dp"
-	app:cardElevation="2dp">
+	android:layout_width="match_parent" >
 
 	<LinearLayout
 		android:id="@+id/recycleitem_editor_LinearLayout"
@@ -40,4 +36,4 @@
 	</LinearLayout>
 
 
-</android.support.v7.widget.CardView>
+</LinearLayout>
