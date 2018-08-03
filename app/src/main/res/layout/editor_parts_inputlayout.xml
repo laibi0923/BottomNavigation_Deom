@@ -14,8 +14,8 @@
 		android:paddingBottom="25dp"
 		android:paddingLeft="20dp"
 		android:paddingRight="20dp"
-		android:textColor="@color/colorPrimary"
-		android:textColorHint="@color/colorPrimary"
+		android:textColor="@color/colorNormalTextcolor"
+		android:textColorHint="@color/colorNormalTextcolor"
 		android:background="?attr/selectableItemBackground">
 
 		<leaningcode.leo.com.bottomnavigation_deom.Editor.PaddingTopEditText
@@ -30,8 +30,8 @@
 			android:clickable="false"
 			android:cursorVisible="false"
 			android:background="@android:color/transparent"
-			android:textColor="@color/colorPrimary"
-			android:textColorHint="@color/colorPrimary" />
+			android:textColor="@color/colorNormalTextcolor"
+			android:textColorHint="@color/colorNormalTextcolor" />
 
 	</android.support.design.widget.TextInputLayout>
 	

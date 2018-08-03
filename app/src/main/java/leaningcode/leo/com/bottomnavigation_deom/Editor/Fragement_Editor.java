@@ -15,10 +15,11 @@ import android.opengl.*;
 
 public class Fragement_Editor extends Fragment
 {
-	private LinearLayout Amount_Layout, DollarSide_Layout;
+	private LinearLayout Date_Layout, Amount_Layout, DollarSide_Layout;
 	private TextView Amount_TextView, DollarSide_TextView;
 	private TextInputLayout Name_Layout, Remark_Layout, PayMethod_Layout, Account_Layout;
 	private PaddingTopEditText Name_EditText, Remark_EditText, PayMethod_EditText, Account_EditText;
+	private Dialog_for_DateInput mDialog_for_DateInput;
 	private Dialog_For_TextInput mDialog_For_TextInput;
 	private Dialog_For_AmountInput mDialog_For_AmountInput;
 	private Dialog_For_RecycleView mDialog_RecycleView;
@@ -116,6 +117,12 @@ public class Fragement_Editor extends Fragment
 			}
 		});
 		
+		
+		//
+		Date_Layout = v.findViewById(R.id.editor_createdate);
+		Date_Layout.setTag("Date_Layout");
+		Date_Layout.setOnClickListener(Item_Onclick_Listener);
+		
 		// Find View by Amount
 		Amount_Layout = v.findViewById(R.id.editor_amount);
 		Amount_Layout.setTag("Amount_Layout");
@@ -195,6 +202,18 @@ public class Fragement_Editor extends Fragment
 			
 			// TODO: Implement this method
 			switch (view.getTag().toString()){
+				
+				case "Date_Layout":
+					DIALOG_REQUEST_CODE = 6;
+					FRAGMENT_TAG = view.getTag().toString();
+					DIALOG_TITLE = "銀碼";
+					DIALOG_HINT = "輸入銀碼";
+					TEMP_TEXT = Amount_TextView.getText().toString();
+
+					mDialog_for_DateInput = new Dialog_for_DateInput();
+					mDialog_for_DateInput.setTargetFragment(Fragement_Editor.this, DIALOG_REQUEST_CODE);
+					mDialog_for_DateInput.show(getFragmentManager(), FRAGMENT_TAG);
+					break;
 				
 				case "Amount_Layout":
 					DIALOG_REQUEST_CODE = 5;

@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/colorNormalText"
+            android:textColor="@color/colorNormalTextcolor"
             android:text="Medium Text"
             android:layout_centerInParent="true"
 			android:longClickable="false"
@@ -92,7 +92,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="@color/colorNormalText"
+                android:textColor="@color/colorNormalTextcolor"
                 android:text="保存"/>
 
         </RelativeLayout>

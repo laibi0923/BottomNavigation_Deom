@@ -14,7 +14,7 @@
 		android:background="@color/colorPrimary">
 
 		<TextView
-			android:textColor="@color/colorNormalText"
+			android:textColor="#2b2b2b"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:text="SAVE"
@@ -42,7 +42,7 @@
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:background="@color/colorNormalBackground"
-					android:layout_marginTop="20dp"
+					
 					android:orientation="vertical"
 					android:gravity="center">
 
@@ -128,8 +128,7 @@
 				<LinearLayout
 					android:layout_height="wrap_content"
 					android:layout_width="match_parent"
-					android:orientation="horizontal"
-					android:layout_marginTop="10dp">
+					android:orientation="horizontal">
 
 					<!-- input type -->
 					<include
@@ -166,6 +165,7 @@
 
 					<!-- start & end date & Alram-->
 					<include
+						android:visibility="gone"
 						android:id="@+id/include_paymethod"
 						layout="@layout/editor_parts_date" />
 					
