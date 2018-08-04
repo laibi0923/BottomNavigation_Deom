@@ -1,23 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
 	android:orientation="vertical"
-	android:background="#FAFAFA">
+	android:background="#F7F7F7">
 
-	<LinearLayout
-		android:visibility="gone"
-		android:layout_height="250dp"
+
+	<RelativeLayout
 		android:layout_width="match_parent"
-		android:orientation="horizontal"/>
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp">
 
-	<LinearLayout
-		android:layout_height="match_parent"
-		android:layout_width="match_parent"
-		android:orientation="vertical"
-		android:layout_margin="20dp"
-		android:background="@drawable/radius_bg_white"/>
+		<RelativeLayout
+			android:id="@+id/top"
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:background="@drawable/radius_bg_white">
 
-</LinearLayout>
+		</RelativeLayout>
+
+
+		<RelativeLayout
+			android:layout_below="@+id/top"
+			android:layout_width="match_parent"
+			android:layout_height="40dp">
+
+		</RelativeLayout>
+
+
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/circle_background"
+			android:layout_centerInParent="true"
+			android:gravity="center">
+
+			<ImageView
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:src="@mipmap/ic_home"
+				android:tint="@color/colorPrimary"/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+
+
+</RelativeLayout>
 
