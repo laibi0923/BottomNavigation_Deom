@@ -12,10 +12,11 @@ import leaningcode.leo.com.bottomnavigation_deom.Main.BottomNavigationViewHelper
 import leaningcode.leo.com.bottomnavigation_deom.R;
 import leaningcode.leo.com.bottomnavigation_deom.Review.Fragment_Review;
 import leaningcode.leo.com.bottomnavigation_deom.Setting.Fragment_Setting;
+import leaningcode.leo.com.bottomnavigation_deom.Editor.*;
 
 public class MainActivity extends AppCompatActivity {
 
-    private BottomNavigationView mBottomNavigationView;
+    //private BottomNavigationView mBottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,11 +25,12 @@ public class MainActivity extends AppCompatActivity {
 
         init_BottomNavigationView();
 
-		getSupportFragmentManager().beginTransaction().replace(R.id.mFrameLayout, new Fragement_Editor()).commit();
+		getSupportFragmentManager().beginTransaction().replace(R.id.mFrameLayout, new TestingFragment()).commit();
 
     }
 
     final void init_BottomNavigationView(){
+		/*
         mBottomNavigationView = findViewById(R.id.mBottomNavigationView);
         BottomNavigationViewHelper.disableShiftMode(mBottomNavigationView);
 
@@ -64,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
 		Fragment_Trans(new Fragement_Editor());
 		mBottomNavigationView.getMenu().getItem(1).setChecked(true);
-
+		*/
     }
 
 

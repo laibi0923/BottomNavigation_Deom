@@ -1,18 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
+	android:orientation="vertical"
 	android:fitsSystemWindows="true">
 
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/bottomnavigationToolbar1"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:background="@color/colorPrimary">
+
+		<TextView
+			android:textColor="#2b2b2b"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="2018 - 8 - 3"
+			android:layout_gravity="center"/>
+
+	</android.support.v7.widget.Toolbar>
+	
 	<FrameLayout
 		android:id="@+id/mFrameLayout"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:layout_above="@+id/mBottomNavigationView" />
 
+	<!--
 	<android.support.design.widget.BottomNavigationView
 		android:id="@+id/mBottomNavigationView"
 		android:layout_width="match_parent"
@@ -22,6 +39,7 @@
 		app:itemTextColor="@color/navigation_select_color"
 		app:itemIconTint="@color/navigation_select_color"
 		android:layout_alignParentBottom="true"/>
-
-</RelativeLayout>
+	--> 
+	
+</LinearLayout>
 
