@@ -12,7 +12,7 @@ public class Fragment_Review extends Fragment
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{
 		// TODO: Implement this method
-		View v = inflater.inflate(R.layout.tetsing, container, false);
+		View v = inflater.inflate(R.layout.tseting_editor_main, container, false);
 		return v;
 	}
 	

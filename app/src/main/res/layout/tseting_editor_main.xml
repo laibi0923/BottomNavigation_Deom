@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp">
+
+    <include
+        android:id="@+id/tseting_editor_partof_header"
+        layout="@layout/tseting_editor_partof_header"/>
+
+    <include
+        android:id="@+id/tseting_editor_partof_amount"
+        layout="@layout/tseting_editor_partof_amount" />
+
+    <include
+        android:id="@+id/tseting_editor_partof_paidby"
+        layout="@layout/tseting_editor_partof_paidby" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorUnderLine"/>
+
+
+    <include
+        android:id="@+id/tseting_editor_partof_remark"
+        layout="@layout/tseting_editor_partof_remark"/>
+
+    <include
+        android:id="@+id/tseting_editor_partof_footer"
+        layout="@layout/tseting_editor_partof_footer"/>
+
+</LinearLayout>

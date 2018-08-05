@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_weight="1">
+
+    <TextView
+        android:id="@+id/editor_amount_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/norwestefont"
+        android:textSize="50dp"
+        android:textColor="@color/color_editor_textcolor"
+        android:text="$0.00"
+        android:clickable="true"/>
+
+    <RelativeLayout
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/radius_bg_gary">
+
+        <TextView
+            android:id="@+id/editor_dollarside_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/norwestefont"
+            android:textColor="@color/color_editor_textcolor"
+            android:text="HKD"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

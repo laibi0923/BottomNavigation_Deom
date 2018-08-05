@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:paddingTop="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/norwestefont"
+        android:textColor="@color/color_editor_textcolor"
+        android:text="PAID BY"/>
+
+
+    <TextView
+        android:id="@+id/editor_pay_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/norwestefont"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/color_editor_textcolor"
+        android:text="CASH"/>
+
+    <RelativeLayout
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:background="@drawable/radius_bg_gary">
+
+        <TextView
+            android:id="@+id/editor_pay_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/norwestefont"
+            android:textColor="@color/color_editor_textcolor"
+            android:text="$"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/editor_bank_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/norwestefont"
+        android:textColor="@color/color_editor_textcolor"
+        android:text=""/>
+</LinearLayout>

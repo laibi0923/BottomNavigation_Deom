@@ -2,12 +2,18 @@
 <resources>
     <color name="colorPrimary">#ffffff</color>
     <color name="colorPrimaryDark">#ffffff</color>
-    <color name="colorAccent">#52DC8F</color>
+        <color name="colorAccent">#52DC8F</color>
 	
 	<color name="colorNormalBackground">#FFFFFF</color>
 	
 	<color name="colorNormalTextcolor">#808080</color>
 	
 	<color name="colorUnderLine">#9e9e9e</color>
+
+
+
+
+
+    <color name="color_editor_textcolor">#989898</color>
 	
 </resources>

@@ -1,17 +1,10 @@
 package leaningcode.leo.com.bottomnavigation_deom;
 
-import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.*; 
 
 import android.support.v4.app.*;
 
-import leaningcode.leo.com.bottomnavigation_deom.Editor.Fragement_Editor;
-import leaningcode.leo.com.bottomnavigation_deom.Main.BottomNavigationViewHelper;
-import leaningcode.leo.com.bottomnavigation_deom.R;
-import leaningcode.leo.com.bottomnavigation_deom.Review.Fragment_Review;
-import leaningcode.leo.com.bottomnavigation_deom.Setting.Fragment_Setting;
 import leaningcode.leo.com.bottomnavigation_deom.Editor.*;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         init_BottomNavigationView();
 
-		getSupportFragmentManager().beginTransaction().replace(R.id.mFrameLayout, new TestingFragment()).commit();
+		Fragment_Trans(new Testing_Editor_Fragment());
 
     }
 
